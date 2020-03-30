@@ -9,7 +9,7 @@ table{
 tr,td{
 	border-top:2px solid #efefef;
 	border-bottom:2px solid #efefef;
-	border-right:1px solid #efefef;
+	/*border-right: 1px solid #efefef;*/
 	
 }
 td,th{
@@ -73,6 +73,9 @@ table#form_t>tbody>tr:nth-child(4) {
 }
 #sum_t{
 	display: none;
+	/* 한줄에 넣으려고 자간조절 */
+	word-spacing: -1px;
+	letter-spacing: -0.5px;
 }
 .red{
 	color:red;
@@ -84,7 +87,7 @@ table#form_t>tbody>tr:nth-child(4) {
 .btntt2 {
 	display: block;
 	width:15px; height: 15px;
-	background: #2c2b2b;
+	background: url('../images/btn_close.gif');
 	color:white;
 	text-align: center;
 	margin: auto;
@@ -94,3 +97,44 @@ table#form_t>tbody>tr:nth-child(4) {
 label {
 	cursor: pointer;
 }
+
+/*
+-------------------------------------------------
+추가 코드
+-------------------------------------------------
+*/
+
+/* 상품 이름 가운데 정렬할려고 만듦 */
+#sum_t th:nth-child(1){
+	text-align: center;
+}
+/* 넘버 숫자판 */
+.number{
+	background: url('../images/rTble_bg2.png');
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	text-align: center;
+	color: #767676;
+	font-size: 12px;
+}
+
+/* 상품 이름 가운데 정렬할려고 */
+.h_table td p{
+	font-weight: 700;
+	margin: 0;
+}
+
+/* 칸 간격 조절하려고 만듦 */
+.h_table td{
+	padding: 1.2em 0.5em;
+}
+td {
+	border-right: 1px solid #efefef;
+}
+
+/*합계 오른쪽 정렬하려고 만듬*/
+.rightT{
+	text-align: right;
+}
+
